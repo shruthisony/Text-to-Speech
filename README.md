@@ -137,6 +137,7 @@ news_analyzer/
    - app.py
    - requirements.txt
    - README.md
+     
 4.⁠ ⁠The application will deploy and be available publicly
 
 
