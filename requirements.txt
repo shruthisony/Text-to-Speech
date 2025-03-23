@@ -1,0 +1,13 @@
+gradio
+transformers
+torch
+sentencepiece
+gTTS
+gtts-token
+selenium
+beautifulsoup4
+requests
+webdriver-manager
+redis
+fastapi
+uvicorn[standard]
