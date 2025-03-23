@@ -5,11 +5,17 @@ This web application summarizes news about a given company, analyzes the sentime
 •⁠  ⁠Fetches latest news (up to 10) using Bing News
 
 •⁠  ⁠Summarizes articles using BART (facebook/bart-large-cnn)
+
 •⁠  ⁠Performs Sentiment Analysis (Positive/Negative/Neutral) using multilingual BERT
+
 •⁠  ⁠Extracts Topics from each summary
+
 •⁠  ⁠Computes Sentiment Distribution
+
 •⁠  ⁠Provides Insights on article tone and topic focus
+
 •⁠  ⁠Converts final summary into Hindi audio using gTTS
+
 •⁠  ⁠Clean and interactive Gradio interface
 
 ## Tech Stack
@@ -50,13 +56,17 @@ news_analyzer/
 1.⁠ ⁠Clone the repository:
    git clone <your-repo-url>
    cd news_analyzer
+   
 2.⁠ ⁠(Optional) Create and activate virtual environment:
    python -m venv venv
    source venv/bin/activate   (on Windows: venv\Scripts\activate)
+   
 3.⁠ ⁠Install dependencies:
    pip install -r requirements.txt
+   
 4.⁠ ⁠Start FastAPI backend:
    uvicorn main:app --reload
+   
 5.⁠ ⁠In another terminal, run Gradio frontend:
    python app.py
 
@@ -87,7 +97,9 @@ news_analyzer/
 ## Deployment (Hugging Face Spaces)
 
 1.⁠ ⁠Create a new Space at: https://huggingface.co/spaces
+
 2.⁠ ⁠Choose 'Gradio' as the SDK
+
 3.⁠ ⁠Upload the following files:
    - app.py
    - requirements.txt
