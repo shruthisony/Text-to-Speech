@@ -33,36 +33,31 @@ Extras          | Redis (optional), Requests, Transformers
 ## Project Structure
 news_analyzer/
 
-├── app.py                    -> Gradio frontend (used for deployment)
+1. main.py                   -> FastAPI backend entrypoint (for local testing)
 
-├── main.py                   -> FastAPI backend entrypoint (for local testing)
+2. requirements.txt          -> All Python dependencies
 
-├── requirements.txt          -> All Python dependencies
+3. frontend/
 
-├── README.md                 -> Project documentation
-
-
-├── frontend/
-
-│   └── app.py                -> Gradio app file (optional if separate)
+a. app.py                -> Gradio app file (optional if separate)
 
 
-├── backend/
+4. backend/
 
-│   ├── api.py                -> FastAPI route for summarization, sentiment, TTS
+a. api.py                -> FastAPI route for summarization, sentiment, TTS
 
-│   ├── news_scraper.py       -> Scrapes latest Bing news
+b. news_scraper.py       -> Scrapes latest Bing news
 
-│   ├── summarizer.py         -> Summarizes text using BART
+c. summarizer.py         -> Summarizes text using BART
 
-│   ├── sentiment.py          -> Analyzes sentiment using BERT
+d. sentiment.py          -> Analyzes sentiment using BERT
 
-│   ├── text_to_speech.py     -> Converts summary to Hindi audio
+e. text_to_speech.py     -> Converts summary to Hindi audio
 
-│   ├── redis_cache.py        -> Optional: Redis-based caching
+f. redis_cache.py        -> Optional: Redis-based caching
 
 
-├── output.mp3                -> Example output Hindi audio
+5. output.mp3                -> Example output Hindi audio
 
 
 
