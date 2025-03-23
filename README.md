@@ -32,23 +32,38 @@ Extras          | Redis (optional), Requests, Transformers
 
 ## Project Structure
 news_analyzer/
+
 ├── app.py                    -> Gradio frontend (used for deployment)
+
 ├── main.py                   -> FastAPI backend entrypoint (for local testing)
+
 ├── requirements.txt          -> All Python dependencies
+
 ├── README.md                 -> Project documentation
 
+
 ├── frontend/
+
 │   └── app.py                -> Gradio app file (optional if separate)
 
+
 ├── backend/
+
 │   ├── api.py                -> FastAPI route for summarization, sentiment, TTS
+
 │   ├── news_scraper.py       -> Scrapes latest Bing news
+
 │   ├── summarizer.py         -> Summarizes text using BART
+
 │   ├── sentiment.py          -> Analyzes sentiment using BERT
+
 │   ├── text_to_speech.py     -> Converts summary to Hindi audio
+
 │   ├── redis_cache.py        -> Optional: Redis-based caching
 
+
 ├── output.mp3                -> Example output Hindi audio
+
 
 
 
@@ -74,23 +89,41 @@ news_analyzer/
 ## Example API Output
 
 {
+
   "company": "Tesla",
+  
   "articles": [
+  
     {
+    
       "title": "...",
+      
       "summary": "...",
+      
       "sentiment": "Positive",
+      
       "topics": ["tesla", "launch", "india"]
+      
     }
+    
   ],
+  
   "summary": "Tesla has 4 positive, 1 negative, and 0 neutral articles.",
+  
   "sentiment_distribution": {
+  
     "Positive": 4,
+    
     "Negative": 1,
+    
     "Neutral": 0
+    
   },
+  
   "insights": "Most articles focus on topics like tesla, launch, india. The sentiment is mostly positive.",
+  
   "audio": "output.mp3"
+  
 }
 
 
