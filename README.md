@@ -3,6 +3,7 @@ This web application summarizes news about a given company, analyzes the sentime
 
 ## Features
 •⁠  ⁠Fetches latest news (up to 10) using Bing News
+
 •⁠  ⁠Summarizes articles using BART (facebook/bart-large-cnn)
 •⁠  ⁠Performs Sentiment Analysis (Positive/Negative/Neutral) using multilingual BERT
 •⁠  ⁠Extracts Topics from each summary
