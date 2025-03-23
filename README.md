@@ -53,8 +53,6 @@ d. sentiment.py          -> Analyzes sentiment using BERT
 
 e. text_to_speech.py     -> Converts summary to Hindi audio
 
-f. redis_cache.py        -> Optional: Redis-based caching
-
 
 5. output.mp3                -> Example output Hindi audio
 
