@@ -27,7 +27,6 @@ Summarization   | BART (facebook/bart-large-cnn)
 Sentiment       | BERT (nlptown/bert-base-multilingual-uncased-sentiment)
 TTS             | gTTS (Google Text-to-Speech)
 Scraping        | Selenium + BeautifulSoup
-Extras          | Redis (optional), Requests, Transformers
 
 
 ## Project Structure
